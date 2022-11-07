@@ -16,7 +16,7 @@ const form = document.querySelector('#form-graus')
         if(!graus) {
             setGraus(`Temperatunra invalida`)
         }else {
-            setGraus(`Temperatura valida ${f}`)
+            setGraus(`Temperatura valida. Farenheit = ${f}`)
         }
     });
 
