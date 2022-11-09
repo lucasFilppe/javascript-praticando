@@ -84,12 +84,12 @@ function getMesesDoAno(numeroMes) {
 
 function criaData(data) {
   const diaSemana = data.getDay()
-  const nomeDoMes = data.month()
+  const nomeDoMes = data.getMonth()
 
   const nomeDia = getDiaSemanatexto(diaSemana)
   const nomeMes = getMesesDoAno(nomeDoMes)
 
-  console.log(nomeDia, nomeMes)
+  return (`${nomeDia}, ${data.getDate()} de ${nomeMes} de ${data.getFullYear()}` )
 }
 
-criaData()
+h1.innerHTML = criaData(data)
